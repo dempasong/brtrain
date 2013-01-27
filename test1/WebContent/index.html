@@ -3,8 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <title>ぬこ列車で行こう</title>
-</head>
-<body>
+<script src="jquery.min.js"></script>
+<script>
+function draw() {
+	var canvas = document.getElementById("canvas1");
+	var ctx = canvas.getContext('2d');
+	var img = new Image();
+	img.src = "Train.bmp";
+	ctx.drawImage(img, 0, 0);
+}
 
+</script>
+</head>
+<body onload="draw()">
+	<canvas id="canvas1" width="1024" height="768">
+		
+	</canvas>
 </body>
 </html>
